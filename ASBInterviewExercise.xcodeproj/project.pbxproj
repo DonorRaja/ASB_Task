@@ -12,6 +12,7 @@
 		939B8E592849A2A0000208E1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B8E582849A2A0000208E1 /* Constant.swift */; };
 		939B8E5B2849A306000208E1 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B8E5A2849A306000208E1 /* Transaction.swift */; };
 		939B8E5D2849A357000208E1 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B8E5C2849A357000208E1 /* TransactionTableViewCell.swift */; };
+		939B8E5F2849B2C1000208E1 /* TransactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B8E5E2849B2C1000208E1 /* TransactionDetailsViewController.swift */; };
 		DCF7BB0426B23DFF00AE0E0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */; };
 		DCF7BB0626B23DFF00AE0E0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */; };
 		DCF7BB0826B23DFF00AE0E0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0726B23DFF00AE0E0E /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		939B8E582849A2A0000208E1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		939B8E5A2849A306000208E1 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		939B8E5C2849A357000208E1 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		939B8E5E2849B2C1000208E1 /* TransactionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewController.swift; sourceTree = "<group>"; };
 		DCF7BB0026B23DFE00AE0E0E /* ASBInterviewExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASBInterviewExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				939B8E542849A20B000208E1 /* TransactionTableViewController.swift */,
+				939B8E5E2849B2C1000208E1 /* TransactionDetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				DCF7BB0426B23DFF00AE0E0E /* AppDelegate.swift in Sources */,
 				939B8E5D2849A357000208E1 /* TransactionTableViewCell.swift in Sources */,
 				DCF7BB0626B23DFF00AE0E0E /* SceneDelegate.swift in Sources */,
+				939B8E5F2849B2C1000208E1 /* TransactionDetailsViewController.swift in Sources */,
 				DCF7BB3926B23ED000AE0E0E /* DIManager.swift in Sources */,
 				939B8E5B2849A306000208E1 /* Transaction.swift in Sources */,
 			);
