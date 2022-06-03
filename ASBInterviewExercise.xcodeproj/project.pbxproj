@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		939B8E552849A20B000208E1 /* TransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B8E542849A20B000208E1 /* TransactionTableViewController.swift */; };
+		939B8E572849A259000208E1 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B8E562849A259000208E1 /* Utility.swift */; };
+		939B8E592849A2A0000208E1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B8E582849A2A0000208E1 /* Constant.swift */; };
+		939B8E5B2849A306000208E1 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B8E5A2849A306000208E1 /* Transaction.swift */; };
+		939B8E5D2849A357000208E1 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B8E5C2849A357000208E1 /* TransactionTableViewCell.swift */; };
 		DCF7BB0426B23DFF00AE0E0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */; };
 		DCF7BB0626B23DFF00AE0E0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */; };
 		DCF7BB0826B23DFF00AE0E0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7BB0726B23DFF00AE0E0E /* ViewController.swift */; };
@@ -38,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		939B8E542849A20B000208E1 /* TransactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewController.swift; sourceTree = "<group>"; };
+		939B8E562849A259000208E1 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		939B8E582849A2A0000208E1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		939B8E5A2849A306000208E1 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		939B8E5C2849A357000208E1 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		DCF7BB0026B23DFE00AE0E0E /* ASBInterviewExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASBInterviewExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +95,7 @@
 		939B8E4D28499C03000208E1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				939B8E542849A20B000208E1 /* TransactionTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -92,6 +103,7 @@
 		939B8E4E28499C10000208E1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				939B8E5C2849A357000208E1 /* TransactionTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -108,6 +120,7 @@
 		939B8E5028499C35000208E1 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				939B8E582849A2A0000208E1 /* Constant.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -124,6 +137,7 @@
 		939B8E5228499C7A000208E1 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				939B8E562849A259000208E1 /* Utility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -131,6 +145,7 @@
 		939B8E5328499C84000208E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				939B8E5A2849A306000208E1 /* Transaction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,13 +174,13 @@
 			isa = PBXGroup;
 			children = (
 				DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */,
+				DCF7BB0726B23DFF00AE0E0E /* ViewController.swift */,
+				DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */,
 				939B8E5328499C84000208E1 /* Model */,
 				939B8E5228499C7A000208E1 /* Utility */,
 				939B8E5028499C35000208E1 /* Constant */,
 				939B8E5128499C59000208E1 /* StoaryBoard */,
 				939B8E4F28499C17000208E1 /* Views */,
-				DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */,
-				DCF7BB0726B23DFF00AE0E0E /* ViewController.swift */,
 				DCF7BB0C26B23E0200AE0E0E /* Assets.xcassets */,
 				DCF7BB1126B23E0200AE0E0E /* Info.plist */,
 				DCF7BB3626B23EB800AE0E0E /* RestClient.swift */,
@@ -328,11 +343,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939B8E572849A259000208E1 /* Utility.swift in Sources */,
 				DCF7BB3726B23EB800AE0E0E /* RestClient.swift in Sources */,
 				DCF7BB0826B23DFF00AE0E0E /* ViewController.swift in Sources */,
+				939B8E592849A2A0000208E1 /* Constant.swift in Sources */,
+				939B8E552849A20B000208E1 /* TransactionTableViewController.swift in Sources */,
 				DCF7BB0426B23DFF00AE0E0E /* AppDelegate.swift in Sources */,
+				939B8E5D2849A357000208E1 /* TransactionTableViewCell.swift in Sources */,
 				DCF7BB0626B23DFF00AE0E0E /* SceneDelegate.swift in Sources */,
 				DCF7BB3926B23ED000AE0E0E /* DIManager.swift in Sources */,
+				939B8E5B2849A306000208E1 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
