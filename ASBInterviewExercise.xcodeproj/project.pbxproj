@@ -82,6 +82,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		939B8E4D28499C03000208E1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		939B8E4E28499C10000208E1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		939B8E4F28499C17000208E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				939B8E4D28499C03000208E1 /* ViewController */,
+				939B8E4E28499C10000208E1 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		939B8E5028499C35000208E1 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		939B8E5128499C59000208E1 /* StoaryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				DCF7BB0926B23DFF00AE0E0E /* Main.storyboard */,
+				DCF7BB0E26B23E0200AE0E0E /* LaunchScreen.storyboard */,
+			);
+			path = StoaryBoard;
+			sourceTree = "<group>";
+		};
+		939B8E5228499C7A000208E1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		939B8E5328499C84000208E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DCF7BAF726B23DFE00AE0E0E = {
 			isa = PBXGroup;
 			children = (
@@ -106,11 +159,14 @@
 			isa = PBXGroup;
 			children = (
 				DCF7BB0326B23DFF00AE0E0E /* AppDelegate.swift */,
+				939B8E5328499C84000208E1 /* Model */,
+				939B8E5228499C7A000208E1 /* Utility */,
+				939B8E5028499C35000208E1 /* Constant */,
+				939B8E5128499C59000208E1 /* StoaryBoard */,
+				939B8E4F28499C17000208E1 /* Views */,
 				DCF7BB0526B23DFF00AE0E0E /* SceneDelegate.swift */,
 				DCF7BB0726B23DFF00AE0E0E /* ViewController.swift */,
-				DCF7BB0926B23DFF00AE0E0E /* Main.storyboard */,
 				DCF7BB0C26B23E0200AE0E0E /* Assets.xcassets */,
-				DCF7BB0E26B23E0200AE0E0E /* LaunchScreen.storyboard */,
 				DCF7BB1126B23E0200AE0E0E /* Info.plist */,
 				DCF7BB3626B23EB800AE0E0E /* RestClient.swift */,
 				DCF7BB3826B23ED000AE0E0E /* DIManager.swift */,
