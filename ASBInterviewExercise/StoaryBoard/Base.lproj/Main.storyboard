@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,6 +70,9 @@
                     <navigationItem key="navigationItem" title="ASB" id="SD5-Ah-qP1">
                         <barButtonItem key="backBarButtonItem" title="Back" id="xyo-4G-OWj"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="zT4-Yj-EDj" kind="show" identifier="sendDataSegue" id="mPV-rD-izQ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZg-Bg-4Sm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,10 +95,146 @@
             </objects>
             <point key="canvasLocation" x="-708" y="-18"/>
         </scene>
+        <!--Details-->
+        <scene sceneID="NyO-Kb-JBO">
+            <objects>
+                <viewController id="zT4-Yj-EDj" customClass="TransactionDetailsViewController" customModule="ASBInterviewExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yK6-BU-M4T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3D-0r-L3k">
+                                <rect key="frame" x="25" y="112" width="367" height="61"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="lFp-1I-csB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33h-4K-cwA">
+                                <rect key="frame" x="25" y="188" width="364" height="61"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="drU-yf-JYt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIQ-ou-B9d">
+                                <rect key="frame" x="25" y="336" width="364" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHf-8U-evl">
+                                        <rect key="frame" x="25" y="8" width="314" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgW-da-U2h">
+                                        <rect key="frame" x="25" y="32.5" width="314" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5r-nu-MyJ">
+                                        <rect key="frame" x="25" y="58" width="314" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="riO-Si-ayr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="V5r-nu-MyJ" firstAttribute="top" secondItem="YIQ-ou-B9d" secondAttribute="top" constant="58" id="3Og-Jt-QDw"/>
+                                    <constraint firstAttribute="height" constant="90" id="TLD-by-Dg9"/>
+                                    <constraint firstItem="V5r-nu-MyJ" firstAttribute="leading" secondItem="YIQ-ou-B9d" secondAttribute="leading" constant="25" id="aq0-2H-3ux"/>
+                                    <constraint firstAttribute="trailing" secondItem="V5r-nu-MyJ" secondAttribute="trailing" constant="25" id="xQV-8T-SfV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3G-dI-piU">
+                                <rect key="frame" x="26" y="262" width="364" height="61"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="zZd-03-zYh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xsd-xp-7gu"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xsd-xp-7gu" firstAttribute="trailing" secondItem="33h-4K-cwA" secondAttribute="trailing" constant="25" id="DUS-Ga-plP"/>
+                            <constraint firstItem="r3D-0r-L3k" firstAttribute="top" secondItem="xsd-xp-7gu" secondAttribute="top" constant="24" id="GqD-j8-RdF"/>
+                            <constraint firstItem="xsd-xp-7gu" firstAttribute="trailing" secondItem="r3D-0r-L3k" secondAttribute="trailing" constant="22" id="ITP-QJ-XQ8"/>
+                            <constraint firstItem="r3D-0r-L3k" firstAttribute="leading" secondItem="xsd-xp-7gu" secondAttribute="leading" constant="25" id="Ilu-bf-a1h"/>
+                            <constraint firstItem="33h-4K-cwA" firstAttribute="top" secondItem="r3D-0r-L3k" secondAttribute="bottom" constant="15" id="LW0-an-lGC"/>
+                            <constraint firstItem="xsd-xp-7gu" firstAttribute="trailing" secondItem="YIQ-ou-B9d" secondAttribute="trailing" constant="25" id="Xgy-MI-HCY"/>
+                            <constraint firstItem="xsd-xp-7gu" firstAttribute="trailing" secondItem="o3G-dI-piU" secondAttribute="trailing" constant="24" id="Y8z-lK-FyT"/>
+                            <constraint firstItem="o3G-dI-piU" firstAttribute="leading" secondItem="xsd-xp-7gu" secondAttribute="leading" constant="26" id="aFT-Ha-MuE"/>
+                            <constraint firstItem="YIQ-ou-B9d" firstAttribute="leading" secondItem="xsd-xp-7gu" secondAttribute="leading" constant="25" id="gfm-rR-TJc"/>
+                            <constraint firstItem="33h-4K-cwA" firstAttribute="leading" secondItem="xsd-xp-7gu" secondAttribute="leading" constant="25" id="mPa-OI-NbY"/>
+                            <constraint firstItem="o3G-dI-piU" firstAttribute="top" secondItem="33h-4K-cwA" secondAttribute="bottom" constant="13" id="udp-Fb-Wb3"/>
+                            <constraint firstItem="YIQ-ou-B9d" firstAttribute="top" secondItem="o3G-dI-piU" secondAttribute="bottom" constant="13" id="uu5-41-oWi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Details" id="Dfq-2N-tzA"/>
+                    <connections>
+                        <outlet property="amountLabel" destination="jHf-8U-evl" id="4Pn-QL-GDa"/>
+                        <outlet property="gstLabel" destination="JgW-da-U2h" id="3FM-iF-dRF"/>
+                        <outlet property="totalAmount" destination="V5r-nu-MyJ" id="NGD-gL-NfO"/>
+                        <outlet property="totalAmountTopConstraint" destination="3Og-Jt-QDw" id="Frg-dZ-1Q1"/>
+                        <outlet property="transactionDate" destination="33h-4K-cwA" id="BtS-it-2hC"/>
+                        <outlet property="transactionName" destination="r3D-0r-L3k" id="3ue-Fm-UsZ"/>
+                        <outlet property="transactionType" destination="o3G-dI-piU" id="kG1-rc-Ow2"/>
+                        <outlet property="transactionView" destination="YIQ-ou-B9d" id="fSa-qn-NLd"/>
+                        <outlet property="transactionViewHeight" destination="TLD-by-Dg9" id="eVe-ey-23t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dl-DU-i6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="-18"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
